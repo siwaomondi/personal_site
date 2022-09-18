@@ -1,0 +1,53 @@
+.NavBar {
+    margin: 0;
+    padding: 0 3%;
+}
+
+.NavBar-header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.NavBar ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 50px;
+    justify-content: space-between;
+}
+
+.NavBar-header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.NavBar-header ul li {
+    line-height: 1;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+
+
+@media screen and (max-width:575px) {
+    .NavBar ul,.NavBar-header {
+        flex-direction: column;
+        padding: 0;
+    }
+    .NavBar-header ul li{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .NavBar ul{
+        margin: 0;
+    }
+    .NavBar-header h1, .NavBar-header ul li{
+        font-size: 16px;
+        margin: 5px;
+    }
+    .NavBar-header h1{
+        padding-top: 2px,
+    }
+
+}

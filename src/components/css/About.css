@@ -1,0 +1,60 @@
+
+
+/******************SECTIONS******************/
+
+/******************INFLUENCES******************/
+.influences-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.influencer {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 300px;
+    margin: 2%; 
+    box-shadow: 10px 10px 10px #D3D3D3;   
+}
+.influencer-content{
+    height: 90%;
+    margin:20px;
+    overflow: hidden;
+}
+.influencer-top{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+}
+.influencer-bottom{
+    text-align: center;
+}
+
+.influencer-img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0;
+    padding: 0;
+    filter: grayscale(50%);
+    overflow:hidden;
+    border-radius: 50%;
+}
+
+.influencer-img img{
+    max-width: 100%;    
+    vertical-align: middle;
+}
+
+.influencer-img:hover{
+    transform: scale(1.04);
+}
+
+
+
+@media all and (max-width: 575px) {
+    /* .influences-div {
+        flex-direction: column;
+        align-items: center;
+    } */
+}

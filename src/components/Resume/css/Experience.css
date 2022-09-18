@@ -1,0 +1,23 @@
+.Experience{
+    
+}
+.Experience-container{
+
+}
+.Experience-company{
+    text-transform: uppercase;
+}
+
+.Experience-responsibilities{
+
+}
+
+.Experience-period{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+h4 a{
+    border-bottom: 0;
+    text-decoration: none;
+}
