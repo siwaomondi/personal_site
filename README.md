@@ -1,2 +1,3 @@
-My personal site built with the MERN stack.
+My personal site built with Reactjs
+
 
