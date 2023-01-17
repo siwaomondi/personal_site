@@ -6,13 +6,8 @@ import emailjs from "@emailjs/browser";
 import { Alert, AlertTitle, Collapse, Dialog } from "@mui/material";
 
 import Box from "@mui/joy/Box";
-// import Alert from "@mui/joy/Alert";
 import ReportIcon from "@mui/icons-material/Report";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import IconButton from "@mui/joy/IconButton";
-import Typography from "@mui/joy/Typography";
-import AlertComponent from "./AlertComponent";
 
 const ContactMe = () => {
     const [open, setOpen] = useState(false);
@@ -47,7 +42,6 @@ const ContactMe = () => {
     };
     const handleDialog = () => {
         setDialogOpen(!dialogOpen);
-        console.log(dialogOpen);
     };
     const processEmail = (cform) => {
         emailjs
@@ -61,18 +55,17 @@ const ContactMe = () => {
                 (result) => {
                     cform.target.reset();
                     setOpen(!open);
-                    setPopup(messages.success)
-                    handleDialog()
+                    setPopup(messages.success);
+                    handleDialog();
                 },
                 (error) => {
-                    console.log(error.text);
-                    setError(error.text)
-                    setPopup(messages.genericError)
-                    handleDialog()
+                    setError(error.text);
+                    setPopup(messages.genericError);
+                    handleDialog();
                 }
             );
         setSender("");
-        setError("")
+        setError("");
     };
     const handleChange = (e) => {
         setSender(e.target.value);

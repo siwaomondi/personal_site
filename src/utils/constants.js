@@ -1,4 +1,4 @@
-import { AppRouter, AdminRouter } from "../routers/index";
+import { AppRouter, AdminRouter } from "../Pages/routers/index";
 export const APPS = {
     main: {
         subdomain: "www",

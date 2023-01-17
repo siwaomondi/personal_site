@@ -1,14 +1,19 @@
 import React from "react";
-import About from "./About";
-import Projects from "./Projects/Projects";
-import Resume from "./Resume/Resume";
-import ContactMe from "./ContactMe";
-import "./css/Home.css";
-import Footer from "./Footer";
-import Intro from "./Intro";
-import Skills from "./Resume/Skills";
+import "../static/css/Home.css";
+
 import resumeData from "../data/resume/resumeData";
 import { Link } from "react-router-dom";
+
+
+/******COMPONENTS IMPORT */
+import Skills from "../components/Resume/Skills";
+import Projects from "../components/Projects/Projects";
+import ContactMe from "../components/ContactMe/ContactMe";
+import Footer from "../components/Footer/Footer";
+import Intro from "../components/Home/Intro/Intro";
+
+
+
 
 const HomePage = (props) => {
     const sectionList = [];
@@ -16,6 +21,7 @@ const HomePage = (props) => {
         <>
             <div className="spage">
                 <Intro />
+                <ContactMe />
                 <Projects />
                 <Skills skills={resumeData.skills} />
                 <section>
@@ -27,7 +33,7 @@ const HomePage = (props) => {
                     </Link>
                 </section>
                 {sectionList}
-                <ContactMe />
+                
                 <Footer />
             </div>
         </>

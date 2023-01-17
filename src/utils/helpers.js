@@ -8,7 +8,7 @@ const getApp = () => {
         case "":
             app = APPS.main;
             break;
-        case process.env. REACT_APP_CUCYVIBVNKFD:
+        case process.env.REACT_APP_CUCYVIBVNKFD:
             app = APPS.admin;
             break;
         default:

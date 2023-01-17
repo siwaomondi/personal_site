@@ -7,9 +7,9 @@ import {
     currently,
     ageData,
 } from "../data/about_me/about_me.js";
-import "./css/About.css";
-import Age from "./About/Age.js";
-import AboutSection from "./About/AboutSection.js";
+import "../static/css/About.css";
+import Age from "../components/About/Age.js";
+import AboutSection from "../components/About/AboutSection.js";
 import { Collapse } from "@mui/material";
 
 const About = (props) => {

@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 const greetings = [
     "hi there!",
-    // "uko fiti?",
-    // "idhi nade",
-    // "bonjour",
-    // "ũhana atĩa.",
-    // "chamgei.",
-    // "oriena.",
-    // "hoi.",
+    "uko fiti?",
+    "idhi nade",
+    "bonjour",
+    "ũhana atĩa.",
+    "chamgei.",
+    "oriena.",
+    "hoi.",
     "plus any other greeting i've left out...😉"
 ];
 

@@ -3,9 +3,13 @@
     border-radius: 15px;
     border: 1px solid white;
     height: 3rem;
-    width: 6rem;
+    /* width: 6rem; */
     align-items: center;
     color: inherit;
+}
+.contact-btn:hover{
+    background: grey;
+    transform: scale(1.05);
 }
 
 #contact__form{

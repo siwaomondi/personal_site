@@ -1,4 +1,4 @@
-import { footerLinks } from "../data/about_me/about_me";
+import { footerLinks } from "../../data/about_me/about_me";
 import { HashLink } from "react-router-hash-link";
 function Footer() {
     const links = footerLinks;
