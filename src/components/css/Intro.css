@@ -1,0 +1,40 @@
+.intro_section{
+    padding-top: 5vh;
+    transition: 1.5s;
+}
+.intro_text {
+    max-width: 58%;
+    transition: 1.5s;
+    padding-top: 1rem;
+    /* margin-top: 10vh; */
+}
+
+#dynamic__greet{
+    transition: ease-in-out 2s;
+    /* font-family:'Moon Dance', cursive; */
+    font-size:xx-large;
+    /* animation: fadeIn 2s; */
+}
+
+.wrapper span{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height:2rem;
+    text-transform: lowercase;
+}
+
+.wrapper{
+    display:flex;flex-direction: column;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }  
+}
+
+@media (max-width: 750px) {
+    .intro_text {
+        max-width: 100%;
+    }
+}

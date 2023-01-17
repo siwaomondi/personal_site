@@ -1,0 +1,21 @@
+.contact-btn {
+    background: transparent;
+    border-radius: 15px;
+    border: 1px solid white;
+    height: 3rem;
+    width: 6rem;
+    align-items: center;
+    color: inherit;
+}
+
+#contact__form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.contact_field{
+    background-color: black;
+    color:rgb(220,220,220);
+
+}

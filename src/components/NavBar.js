@@ -1,26 +1,25 @@
-import React, { Component } from "react";
+import React, { } from "react";
 import './css/NavBar.css'
-import { Link } from 'react-router-dom'
-
+import { HashLink } from "react-router-hash-link";
 
 const NavBar = (props) => {
     return ( 
         <nav className="NavBar">
                 <div className="NavBar-header">
-                    <Link to="/"><h1>SIWA OMONDI</h1></Link>
+                    <HashLink to="#"><h1>SIWA OMONDI</h1></HashLink>
                     <div>
                         <ul>
                             <li>
-                                <Link to="/about"><a>About</a></Link>
+                                <HashLink to="#about" smooth>About</HashLink>
                             </li>
                             <li>
-                                <Link to="/resume"><a>Resume</a></Link>
+                                <HashLink to="#resume" smooth>Resume</HashLink>
                             </li>
                             <li>
-                                <Link to="/projects"><a>Projects</a></Link>
+                                <HashLink to="#portfolio" smooth>Portfolio</HashLink>
                             </li>
                             <li>
-                                <Link to="/contacts"><a>Contact Me</a></Link>
+                                <HashLink to="#contactMe" smooth>Contact Me</HashLink>
                             </li>
 
                         </ul>

@@ -9,7 +9,7 @@ class Education extends Component {
         const educationList = this.props.educationList
         const education = educationList.map(e =>
             <div>
-                <h2>{e.certification}</h2>
+                <h2 style={{fontSize:"1.15em",}}>{e.certification}</h2>
                 <p><a href={e.institutionUrl} target="_blank">{e.institutionName}</a> , {e.completionYear}</p>
             </div>
         )
