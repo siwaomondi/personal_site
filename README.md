@@ -1,4 +1,4 @@
-My personal site built with the MERN stack. Still Work in Progress
+My personal site created using create-react-app and hosted on firebase. Still Work in Progress
 
 
 
