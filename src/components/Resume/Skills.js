@@ -1,6 +1,5 @@
-import React, { Component, useEffect } from "react";
+import React, {} from "react";
 import { TagCloud } from "react-tagcloud";
-import SkillsTag from "./TagCloud";
 
 const Skills = (props) => {
     const skillsList = props.skills;
@@ -28,7 +27,7 @@ const Skills = (props) => {
     );
 
     return (
-        <section className="Skills">
+        <section id="Skills"  style={{padding:0,margin:0}}>
             <TagCloud
                 style={{ textAlign: "center" ,transition:"1.5s"}}
                 minSize={2}
