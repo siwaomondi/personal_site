@@ -1,0 +1,14 @@
+p a {
+    border-bottom: 1px dotted hsla(0, 0%, 63%, .65);
+    text-decoration: none;
+    transition: color .2s ease, border-bottom-color .2s ease;
+}
+
+a, a:visited, a:active {
+    color: inherit;
+}
+
+a:hover {
+    color: #2e59ba !important;
+    border-bottom: 0;
+}
