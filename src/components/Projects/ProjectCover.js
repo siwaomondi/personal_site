@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './ProjectCover.css'
+// import './ProjectCover.css'
 
 
 

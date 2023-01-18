@@ -1,7 +1,7 @@
 import { Collapse } from "@mui/material";
 import React, { Component, useState } from "react";
 import PortfolioCover from "./PortfolioObject";
-import "./Projects.css";
+// import "./Projects.css";
 
 const Projects = (props) => {
     const projectList = props.projectList;

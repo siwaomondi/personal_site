@@ -1,14 +1,19 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import React from "react";
-import { getApp} from "./utils/helpers";
+import React, { Suspense } from "react";
+import { getApp } from "./utils/helpers";
+import { Switch } from "react-router-dom";
+import './static/css/main.scss'; //for all the css to avoid singe component imports
+import Main from "./layouts/Main";
 
-function App() {
+const App =()=> {
     const CurrentApp = getApp();
     return (
         <div className="App">
             <BrowserRouter>
-                <CurrentApp />
+                <Suspense fallback={<Main />}>
+                    <CurrentApp />
+                </Suspense>
             </BrowserRouter>
         </div>
     );

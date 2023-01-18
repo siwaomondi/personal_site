@@ -1,4 +1,4 @@
-import "../../../static/css/Intro.css";
+// import "../../../static/css/Intro.css";
 import Greeting from "./Greeting";
 
 function Intro() {
