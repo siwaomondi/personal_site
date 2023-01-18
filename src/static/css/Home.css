@@ -11,7 +11,7 @@
     padding-right: 0%;
 }
 .spage > section{
-    padding-top: 10vh;
+    padding-top: 8vh;
     transition: 1.5s;
 }
 
@@ -44,6 +44,8 @@ section.full .title{
 .footer__content a {
     text-decoration: none;
 }
+
+
 /*MEDIA CONFIGS*/
 
 @media (max-width: 900px) {
