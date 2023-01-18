@@ -1,15 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 const greetings = [
-    "hi there!",
-    "uko fiti?",
+    "hi there",
+    "niaje mkuu",
     "idhi nade",
+    "ũhana atĩa",
+    "chamgei",
+    "oriena",
+    "ٱلسَّلَامُ عَلَيْكُمْ",
+    "hoi",
     "bonjour",
-    "ũhana atĩa.",
-    "chamgei.",
-    "oriena.",
-    "hoi.",
-    "plus any other greeting i've left out...😉"
+    "gruetzi",
+    "Ciao",
+    "你好",
+    "marhaba",
+    "namaste",
+    "Здравствуйте",
+    "plus any other greeting i've left out😉"
 ];
 
 const useInterval = (callback, delay) => {
@@ -31,7 +38,7 @@ const useInterval = (callback, delay) => {
 };
 
 const Greeting = ({ loopMessage }) => {
-    const hold = 100; // ticks to wait after greeting is complete before rendering next
+    const hold = 50; // ticks to wait after greeting is complete before rendering next
     const delay = 50; // tick length in
 
     const [idx, updateIter] = useState(0); //points to current greeting
@@ -69,10 +76,9 @@ const Greeting = ({ loopMessage }) => {
             style={{
                 display: "block",
                 padding:0,
-
             }}
         >
-            {greeting}
+            {greeting}.
         </span>
     );
 };
