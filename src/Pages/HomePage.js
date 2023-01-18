@@ -1,5 +1,5 @@
 import React from "react";
-import "../static/css/Home.css";
+// import "../static/css/Home.css";
 
 import resumeData from "../data/resume/resumeData";
 import { Link } from "react-router-dom";
@@ -11,6 +11,7 @@ import Projects from "../components/Projects/Projects";
 import ContactMe from "../components/ContactMe/ContactMe";
 import Footer from "../components/Footer/Footer";
 import Intro from "../components/Home/Intro/Intro";
+import Main from "../layouts/Main";
 
 
 
@@ -18,7 +19,7 @@ import Intro from "../components/Home/Intro/Intro";
 const HomePage = (props) => {
     const sectionList = [];
     return (
-        <>
+        <Main>
             <div className="spage">
                 <Intro />
                 <ContactMe />
@@ -36,7 +37,7 @@ const HomePage = (props) => {
                 
                 <Footer />
             </div>
-        </>
+        </Main>
     );
 };
 

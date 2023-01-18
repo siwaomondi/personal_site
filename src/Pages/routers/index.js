@@ -1,10 +1,10 @@
 import {Route, Routes, Navigate } from "react-router-dom";
 import About from "../About";
 import React, {} from "react";
-import Resume from "../../components/Resume/Resume";
 import HomePage from "../HomePage";
 import NotFoundComponent from "../NotFoundComponent";
 import AdminHome from "../Admin/AdminHome";
+import Resume from "../Resume";
 
 const AppRouter= () => {
     return (
