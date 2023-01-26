@@ -17,14 +17,11 @@ const About = (props) => {
     return (
         <MiscallenousLayout title="About" description="Learn about Siwa Omondi">
             <section id="about">
-                <h1>ABOUT ME</h1>
-                <section>
-                    <h4>
-                        Age : <Age ageData={ageData} />
-                    </h4>
-                    <h1>Me in a few words</h1>
-                    {/* <h1>{intro}</h1> */}
-                </section>
+                <p>
+                    Age : <Age ageData={ageData} />
+                </p>
+                <h1 style={{fontWeight:"400"}}>Me in a few words</h1>
+                {/* <h1>{intro}</h1> */}
 
                 {sections}
             </section>

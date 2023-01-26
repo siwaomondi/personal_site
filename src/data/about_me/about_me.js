@@ -1,5 +1,5 @@
 import rev_omondi from "../../images/influences/rev_omondi_siwa.jpg";
-
+import { Link } from "react-router-dom";
 const intro = {
     title: "Intro",
     description: "W.I.P",
@@ -21,8 +21,8 @@ const likes = {
     list: [
         "Finding my limits and going there",
         "Running",
-        <a>Books</a>,
-        "Writing",
+        "Books",
+        <Link to="/articles">Writing(self-proclaimed charlatan)</Link>,
         "Reading",
         "Anything fitness related"
     ],

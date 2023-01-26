@@ -14,7 +14,7 @@ const Main = (props) => {
                 {props.title && <title>{props.title}</title>}
                 <meta
                     property="og:title"
-                    content="Siwa. Software Developer | Architectural Designer"
+                    content="Siwa Brian Omondi. Software Developer | Architectural Designer"
                 />
                 <meta name="og:description" content={props.description} />
                 <meta

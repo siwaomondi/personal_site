@@ -8,6 +8,7 @@ import SmallNavbar from "../components/NavBar/SmallNavBar";
 const ProjectLayout = (props) => {
     const {portfolioId} =useParams()
     const isMain = portfolioId?false:true
+    const categories = ["architecture","<code/>"]
 
     return (
         <HelmetProvider>
@@ -32,8 +33,8 @@ const ProjectLayout = (props) => {
                     href={`http://siwaomondi.com/${props.subdirectory}`}
                 />
             </Helmet>
-            <div class="project__page layout__page">
-                <SmallNavbar isMain = {isMain}></SmallNavbar>
+            <div class="project__page layout__page page">
+                <SmallNavbar isMain = {isMain} categories={categories}></SmallNavbar>
                 <section class="project__content">{props.children}</section>
                 <div class="project__footer">
                     <Footer></Footer>

@@ -3,7 +3,13 @@ import ArticleLayout from "../layouts/ArticleLayout";
 const ArticlesMainPage = () => {
     return (
     <ArticleLayout>
-    <h1>my articles will be updated soon</h1>
+    <h3 style={{fontWeight:"200"}}>Told you i was a charlatan...😂😂😂
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    I will update this section soon</h3>
     </ArticleLayout>);
 }
  

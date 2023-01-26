@@ -1,6 +1,8 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
+import Footer from "../components/Footer/Footer";
+import SmallNavbar from "../components/NavBar/SmallNavBar";
 
 const MiscallenousLayout = (props) => {
     return (
@@ -25,7 +27,11 @@ const MiscallenousLayout = (props) => {
                     href={`http://siwaomondi.com/${props.subdirectory}`}
                 />
             </Helmet>
-            {props.children}
+            <div className="layout__page">
+                <SmallNavbar categories={["about","resume"]} isMiscellaneous={true}></SmallNavbar>
+                {props.children}
+                <Footer></Footer>
+            </div>
         </HelmetProvider>
     );
 };
