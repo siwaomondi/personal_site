@@ -10,12 +10,14 @@
     "@mui/material": "^5.10.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
+    "@types/react-transition-group": "^4.4.5",
     "axios": "^1.2.2",
     "cors": "^2.8.5",
     "depcheck": "^1.4.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-subdomain": "^1.0.5",
+    "g": "^2.0.1",
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20",
     "prop-types": "^15.8.1",
@@ -35,7 +37,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:backend": "nodemon nodeback.js",
+    "start:backend": "nodemon nodebackend.js",
     "start:frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
