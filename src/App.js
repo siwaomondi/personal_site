@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import React, { Suspense } from "react";
 import { getApp } from "./utils/helpers";
-import { Switch } from "react-router-dom";
 import './static/css/main.scss'; //for all the css to avoid singe component imports
 import Main from "./layouts/Main";
 
