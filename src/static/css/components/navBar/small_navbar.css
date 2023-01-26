@@ -1,18 +1,25 @@
-.small__page_nav{
+.small__page__nav {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
-
-
-.small__page_nav div a{
-    opacity: .54;
+.s_nav_link {
+    opacity: 0.54;
+    transition: 1s;
 }
 
-.small__page_nav div a:hover{
+.s_nav_link:hover {
     opacity: 1;
-    text-decoration: none;
-    cursor: pointer;
+}
+
+.s_nav_link.active {
+    text-decoration: underline red;
+    opacity: 1;
+
+}
+
+.small_nav_active {
 }

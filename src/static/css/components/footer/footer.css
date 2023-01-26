@@ -1,5 +1,5 @@
 .footer {
-    transition: 1s;
+    transition: 0.2s;
 }
 .footer__content {
     display: flex;

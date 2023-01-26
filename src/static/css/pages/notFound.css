@@ -17,3 +17,8 @@
     font-size: 5vh;
     padding: 1vh 0;
 }
+
+.invalid_id_text{
+    color: red;
+    text-decoration: underline;
+}

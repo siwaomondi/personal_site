@@ -3,3 +3,16 @@
     padding:5% 15% 2%;
     transition: ease 1.5s;
 }
+
+@media (max-width: 900px) {
+    .layout__page{
+        padding:5% 2%;
+    }
+    
+}
+@media (max-width: 600px) {
+    .layout__page{
+        padding:10px;
+    }
+    
+}

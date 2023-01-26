@@ -19,26 +19,10 @@
 
 
 .project__content{
-    min-height:50vh;
-    padding-top: 5%;
+    min-height:60vh;
 }
 
 .project__footer{
     /* display:table-row; */
     height: 0;
-}
-
-
-
-@media (max-width: 900px) {
-    .project__page{
-        padding:5% 2%;
-    }
-    
-}
-@media (max-width: 600px) {
-    .project__page{
-        padding:10px;
-    }
-    
 }
