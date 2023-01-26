@@ -1,9 +1,10 @@
 import { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 const SmallNavbar = (props) => {
     const categories = ["articles", "portfolio"];
+    const navigate = useNavigate();
     /**
      * Returns left navbar component
      * @param {list} render_list The list to map into html.
@@ -15,7 +16,12 @@ const SmallNavbar = (props) => {
                 <>
                     {index != 0 ? <span> | </span> : null}
                     {props.isMain || props.isMiscellaneous ? (
-                        <NavLink to={`/${e}`} className="s_nav_link">{e}</NavLink>
+                        <NavLink to={`/${e}`} className="s_nav_link">
+                            {e}
+                        </NavLink>
+                    ) : props.isNotFound ? (
+                        // <a href="javascript:history.back()" >{e}</a>
+                        <button onClick={() => navigate(-2)}>{e}</button>
                     ) : (
                         <Link className="s_nav_link">{e}</Link>
                     )}
@@ -27,7 +33,9 @@ const SmallNavbar = (props) => {
     return (
         <nav class="small__page__nav">
             <Link to="/">siwa.</Link>
-            {props.isMain
+            {props.isNotFound
+                ? navSideLinks(["← go back"])
+                : props.isMain
                 ? navSideLinks(categories)
                 : props.isMiscellaneous
                 ? navSideLinks(props.categories)
@@ -41,6 +49,7 @@ SmallNavbar.defaultProps = {
     categories: [],
     isMiscellaneous: false,
     isMain: false,
+    isNotFound: false,
 };
 
 export default SmallNavbar;

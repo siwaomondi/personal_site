@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
+import SmallNavbar from "../components/NavBar/SmallNavBar";
 
 const NotFoundLayout = (props) => {
     return (
@@ -13,10 +14,11 @@ const NotFoundLayout = (props) => {
                         content="The content you are looking for cannot be found."
                     />
                 </Helmet>
-                <div className="not__found__layout">
-                    <nav>
+                <div className="layout__page">
+                    <SmallNavbar isNotFound={true} ></SmallNavbar>
+                    {/* <nav>
                         <Link to="/">siwa o.</Link>
-                    </nav>
+                    </nav> */}
                     {props.children}
                     <span classname="c_t_a">
                         Get in touch,i don't bite. Or maybe i do ...get in
