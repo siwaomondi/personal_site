@@ -1,14 +1,41 @@
-p a {
-    border-bottom: 1px dotted hsla(0, 0%, 63%, .65);
-    text-decoration: none;
-    transition: color .2s ease, border-bottom-color .2s ease;
+.ResumeObject-title{
+    text-transform: uppercase;
+
+}
+.ResumeObject-container{
+    text-align: left;
+    
 }
 
-a, a:visited, a:active {
-    color: inherit;
+
+.Experience-company{
+    text-transform: uppercase;
 }
 
-a:hover {
-    color: #2e59ba !important;
+.Experience-period{
+    font-size: 0.8rem;
+}
+
+h4 a{
     border-bottom: 0;
+    text-decoration: none;
+}
+/* Importing google font  */
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: #00ffffff;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ff6347;
 }

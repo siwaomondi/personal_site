@@ -1,0 +1,18 @@
+.small__page_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+
+.small__page_nav div a{
+    opacity: .54;
+}
+
+.small__page_nav div a:hover{
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+}

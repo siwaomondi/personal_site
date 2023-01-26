@@ -1,0 +1,26 @@
+.footer {
+    transition: 1s;
+}
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__content a {
+    text-decoration: none;
+}
+
+@media (max-width:900px) {
+    /* .footer__links{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content:space-between;
+    } */
+    .made_in{
+        display: none;
+    }
+    
+}

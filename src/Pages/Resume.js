@@ -3,6 +3,7 @@ import Experience from "../components/Resume/Experience";
 import ResumeObject from "../components/Resume/ResumeObject";
 import resumeData from "../data/resume/resumeData";
 import Main from "../layouts/Main";
+import MiscallenousLayout from "../layouts/MiscallenousLayout";
 // import "../static/css/Resume.css";
 
 const Resume= (props)=> {
@@ -10,7 +11,7 @@ const Resume= (props)=> {
         <ResumeObject key={index} componentName={e.props.componentName} object={e} />
     ));
     return (
-        <Main
+        <MiscallenousLayout
             title="Resume"
             description="Siwa Omondi (Brian) resume and skills"
             subdirectory="resume"
@@ -18,7 +19,7 @@ const Resume= (props)=> {
             <section className="Resume" id="resume">
                 {resumeSections}
             </section>
-        </Main>
+        </MiscallenousLayout>
     );
 }
 Resume.defaultProps = {

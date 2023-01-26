@@ -1,11 +1,17 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
+import { Link, useParams } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
+import SmallNavbar from "../components/NavBar/SmallNavBar";
 
-const Main = (props) => {
+const ProjectLayout = (props) => {
+    const {portfolioId} =useParams()
+    const isMain = portfolioId?false:true
+
     return (
         <HelmetProvider>
-            <ScrollToTop smooth color="red"/>
+            <ScrollToTop smooth />
             <Helmet
                 titleTemplate="%s | Siwa Omondi"
                 defaultTitle="Siwa Omondi | Designer | Developer"
@@ -14,7 +20,7 @@ const Main = (props) => {
                 {props.title && <title>{props.title}</title>}
                 <meta
                     property="og:title"
-                    content="Siwa. Software Developer | Architectural Designer"
+                    content={`Brian Siwa Omondi.${props.ProjectType}`}
                 />
                 <meta name="og:description" content={props.description} />
                 <meta
@@ -26,12 +32,17 @@ const Main = (props) => {
                     href={`http://siwaomondi.com/${props.subdirectory}`}
                 />
             </Helmet>
-            {props.children}
+            <div class="project__page layout__page">
+                <SmallNavbar isMain = {isMain}></SmallNavbar>
+                <section class="project__content">{props.children}</section>
+                <div class="project__footer">
+                    <Footer></Footer>
+                </div>
+            </div>
         </HelmetProvider>
     );
 };
-
-Main.propTypes = {
+ProjectLayout.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
@@ -41,11 +52,13 @@ Main.propTypes = {
     description: PropTypes.string,
 };
 
-Main.defaultProps = {
+ProjectLayout.defaultProps = {
     children: null,
     fullPage: false,
     title: null,
     description: "Siwa Omondi's personal website.",
     subdirectory: "",
+    route:""
 };
-export default Main;
+
+export default ProjectLayout;

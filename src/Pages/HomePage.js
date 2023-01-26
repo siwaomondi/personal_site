@@ -26,10 +26,10 @@ const HomePage = (props) => {
                 <Projects />
                 <Skills skills={resumeData.skills} />
                 <section>
-                    <Link to="about" style={{textDecoration:"none" , cursor: 'pointer'}}>
+                    <Link to="about">
                         <h1>About</h1>
                     </Link>
-                    <Link to="resume" style={{textDecoration:"none"}}>
+                    <Link to="resume">
                         <h1>Resume</h1>
                     </Link>
                 </section>

@@ -9,14 +9,13 @@ import {
 } from "../data/about_me/about_me.js";
 import Age from "../components/About/Age.js";
 import AboutSection from "../components/About/AboutSection.js";
-import { Collapse } from "@mui/material";
-import Main from "../layouts/Main.js";
+import MiscallenousLayout from "../layouts/MiscallenousLayout.js";
 
 const About = (props) => {
     const sections = props.sections.map((e) => <AboutSection data={e} />);
 
     return (
-        <Main title="About" description="Learn about Siwa Omondi">
+        <MiscallenousLayout title="About" description="Learn about Siwa Omondi">
             <section id="about">
                 <h1>ABOUT ME</h1>
                 <section>
@@ -29,7 +28,7 @@ const About = (props) => {
 
                 {sections}
             </section>
-        </Main>
+        </MiscallenousLayout>
     );
 };
 

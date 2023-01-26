@@ -1,13 +1,22 @@
-import React, { Component } from "react";
+import React, {} from "react";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer/Footer";
 // import "../static/css/notFound.css";
+import Main from "../layouts/Main";
+import NotFoundLayout from "../layouts/NotFoundLayout";
 
 const NotFoundComponent = (props) => {
     return (
-        <div className="notFound">
-            <h2>Ooooops!!</h2>
-            <h1>404</h1>
-            <h2>Page Not Found</h2>
-        </div>
+        <NotFoundLayout>
+            <div className="notFound">
+                <h2>Ooooops!!</h2>
+                <h1>404</h1>
+                <h2>Page Not Found</h2>
+                <p>
+                    Return <Link to="/">home</Link>. 
+                </p>
+            </div>
+        </NotFoundLayout>
     );
 };
 

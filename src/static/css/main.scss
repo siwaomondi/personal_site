@@ -1,15 +1,24 @@
 //Base
+@import "./base/base.css";
 
+
+//Layouts
+@import "./layouts/projectLayout.css";
+@import "./layouts/notFoundLayout.css";
+@import "./layouts/articleLayout.css";
+@import "./layouts/commonLayouts.css";
 
 //Home
 @import "./pages/homePage.css";
 @import "./pages/notFound.css";
 
 /**/
-@import "./layouts/footer.css";
 
 
 //COMPONENTS
+
+///Footer
+@import "./components/footer/footer.css";
 ////About
 @import "./components/about/about.css";
 
@@ -21,16 +30,14 @@
 
 ////NavBar
 @import "./components/navBar/navbar.css";
+@import "./components/navBar/small_navbar.css";
 
 ////Projects
 @import "./components/projects/projects.css";
 @import "./components/projects/projectCover.css";
 
 //Resume
-@import "./components/resume/experience.css";
 @import "./components/resume/resume.css";
-@import "./components/resume/resumeObject.css";
-@import "./components/resume/skills.css";
 
 
 

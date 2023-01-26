@@ -1,6 +1,6 @@
 import { Collapse } from "@mui/material";
-import React, { Component, useState } from "react";
-import PortfolioCover from "./PortfolioObject";
+import React, {useState } from "react";
+import PortfolioCover from "./PortfolioCover";
 // import "./Projects.css";
 
 const Projects = (props) => {
@@ -18,7 +18,6 @@ const Projects = (props) => {
             >
                 <h1 className="title">Portfolio</h1>
             </a>
-
             <Collapse in={open} timeout={2000}>
                 <div className="comp-s-div auto_slide ">{projects}</div>
             </Collapse>

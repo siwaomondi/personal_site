@@ -2,10 +2,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
 
-const Main = (props) => {
+const MiscallenousLayout = (props) => {
     return (
         <HelmetProvider>
-            <ScrollToTop smooth color="red"/>
             <Helmet
                 titleTemplate="%s | Siwa Omondi"
                 defaultTitle="Siwa Omondi | Designer | Developer"
@@ -31,7 +30,7 @@ const Main = (props) => {
     );
 };
 
-Main.propTypes = {
+MiscallenousLayout.propTypes = {
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
@@ -41,11 +40,12 @@ Main.propTypes = {
     description: PropTypes.string,
 };
 
-Main.defaultProps = {
+MiscallenousLayout.defaultProps = {
     children: null,
     fullPage: false,
     title: null,
     description: "Siwa Omondi's personal website.",
     subdirectory: "",
 };
-export default Main;
+
+export default MiscallenousLayout;

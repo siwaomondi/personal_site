@@ -1,0 +1,5 @@
+.layout__page{
+    min-height: 100vh;
+    padding:5% 15% 2%;
+    transition: ease 1.5s;
+}

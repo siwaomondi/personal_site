@@ -3,9 +3,9 @@ import { HashLink } from "react-router-hash-link";
 function Footer() {
     const links = footerLinks;
     return (
-        <section class="footer">
+        <section class="footer" >
             <div class="footer__content">
-                <div>
+                <div className="footer__links">
                     <span>
                         <HashLink
                             to="#"
@@ -35,7 +35,7 @@ function Footer() {
                         <a href="mailto: siwaomondi@gmail.com">email</a>
                     </span>
                 </div>
-                <div>
+                <div className="made_in">
                     <span>made in Kanairo</span>
                 </div>
             </div>

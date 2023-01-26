@@ -34,18 +34,6 @@ section.full .title{
     margin-right: 10%;
 }
 
-.footer__content {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.footer__content a {
-    text-decoration: none;
-}
-
-
 /*MEDIA CONFIGS*/
 
 @media (max-width: 900px) {
@@ -54,6 +42,10 @@ section.full .title{
         margin-right: 5%;
         padding-left: 0;
         padding-right: 0;
+    }
+    section.full .title{
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 @media (max-width: 600px) {
