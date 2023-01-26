@@ -6,6 +6,9 @@ import Main from "../../layouts/Main";
 const AdminHome = () => {
     return (
         <Main title="Admin" description="Admin">
+            <Admin basename={`${process.env.REACT_APP_CUCYVIBVNKFD}/siwaomondi`} dataProvider={""}>
+                <Resource name="posts" />
+            </Admin>
             <h1>Admin Home works</h1>
         </Main>
     );

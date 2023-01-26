@@ -8,12 +8,14 @@
 }
 
 .notFound h1 {
-    font-size: 40vh;
+    font-weight: 300;
+    font-size: 30vh;
     margin: 0;
     padding: 0;
 }
 
 .notFound h2 {
+    font-weight: 200;
     font-size: 5vh;
     padding: 1vh 0;
 }
