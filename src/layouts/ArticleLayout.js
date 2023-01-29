@@ -1,13 +1,12 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
 import SmallNavbar from "../components/NavBar/SmallNavBar";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 
 const ArticleLayout = (props)=>{
-    const {articleId} = useParams()
-    let isMain =  articleId? false:true
+    const {id} = useParams()
+    let isMain =  id? false:true
     const categories = ["politics","philosophy","programming"]
     return (
         <>

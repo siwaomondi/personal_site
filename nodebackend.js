@@ -10,15 +10,23 @@ const app = express();
 var router = express.Router();
 
 app.use(cors);
-app.use(express.static(path.join(__dirname,"build")))
-
+app.use(express.static(path.join(__dirname, "build")));
 
 app.get("/*", (req, res) => {
     res.json("hi");
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-app.use(subdomain(process.env.REACT_APP_CUCYVIBVNKFD, router));
+app.get("/articles/:id", (req, res) => {
+    var articleId = req.params.id;
+    res.json({ greeting: `hi ${articleId}` });
+});
+
+app.get("/api", (req, res) => {
+    res.json({ message: "Hello from server!" });
+});
+
+// app.use(subdomain(process.env.REACT_APP_CUCYVIBVNKFD, router));
 app.listen(8000, () => {
     console.log(`listening on port ${PORT}`);
 });

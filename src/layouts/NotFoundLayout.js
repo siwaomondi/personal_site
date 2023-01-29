@@ -1,6 +1,5 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import SmallNavbar from "../components/NavBar/SmallNavBar";
 

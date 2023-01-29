@@ -1,13 +1,13 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
-import { Link, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import SmallNavbar from "../components/NavBar/SmallNavBar";
 
 const ProjectLayout = (props) => {
-    const {portfolioId} =useParams()
-    const isMain = portfolioId?false:true
+    const {id} =useParams()
+    const isMain = id?false:true
     const categories = ["architecture","<code/>"]
 
     return (

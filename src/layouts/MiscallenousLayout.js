@@ -1,8 +1,21 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import ScrollToTop from "react-scroll-to-top";
 import PropTypes from "prop-types";
 import Footer from "../components/Footer/Footer";
 import SmallNavbar from "../components/NavBar/SmallNavBar";
+
+const SideSection = () => {
+    return (
+        <div className="sideSection">
+            <div className="image__wrapper">
+                <img src="images\intro_image\personal_image.png"></img>
+            </div>
+
+            
+            <span style={{fontSize:'14px'}}>Hi. I'm Siwa. I design and build things.</span>
+            {/* <button className="cv__button">download cv</button> */}
+        </div>
+    );
+};
 
 const MiscallenousLayout = (props) => {
     return (
@@ -28,8 +41,15 @@ const MiscallenousLayout = (props) => {
                 />
             </Helmet>
             <div className="layout__page">
-                <SmallNavbar categories={["about","resume"]} isMiscellaneous={true}></SmallNavbar>
-                {props.children}
+                <SmallNavbar
+                    categories={["about", "resume"]}
+                    isMiscellaneous={true}
+                ></SmallNavbar>
+                <div className="c-flex">
+                    <SideSection></SideSection>
+                    <div className="content_wrapper">{props.children}</div>
+                </div>
+
                 <Footer></Footer>
             </div>
         </HelmetProvider>

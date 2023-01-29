@@ -48,7 +48,7 @@ let resumeData = {
             { value: "C++", count: 62 },
             { value: "C", count: 45 },
             { value: "Git", count: 60 },
-            { value: "Django", count: 50 },
+            // { value: "Django", count: 50 },
             { value: "Flask", count: 50 },
             { value: "MongoDB", count: 50 },
             { value: "React", count: 80 },
@@ -57,6 +57,7 @@ let resumeData = {
             { value: "Angular.js", count: 70 },
             { value: "Solidity", count: 60 },
             { value: "NextJs", count: 60 },
+            { value: "Express", count: 60 },
         ],
         design: [
             { value: "Revit", count: 90 },

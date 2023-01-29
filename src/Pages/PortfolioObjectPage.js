@@ -3,17 +3,17 @@ import IdNotFound from "../components/NotFound/IdNotFound.js";
 import ProjectLayout from "../layouts/ProjectLayout.js";
 // import { withRouter } from "react-router-dom";
 const PortfolioObjectPage = (props) => {
-    const { portfolioId } = useParams();
+    const { id } = useParams();
     var content = "";
     return (
-        <ProjectLayout route={portfolioId}>
+        <ProjectLayout route={id}>
             <div>
-                {portfolioId == "project1" ? (
+                {id == "project1" ? (
                     <h1>Will be updated soon...</h1>
                 ) : (
                     <IdNotFound
                         link="pOrtfolio"
-                        errorId={portfolioId}
+                        errorId={id}
                         title="projects"
                     ></IdNotFound>
                 )}

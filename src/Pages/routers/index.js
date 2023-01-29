@@ -10,15 +10,17 @@ import PortfolioMainPage from "../PortfolioMainPage";
 import ArticlesMainPage from "../ArticleMainPage";
 import Article from "../Article";
 import AdminEdit from "../Admin/AdminEdit";
+import Calculator from "../Calculator";
 
 const AppRouter= () => {
     return (
         <Routes>
             <Route path="/about" element={<About />} />
+            <Route path="/calculator" element={<Calculator />} />
             <Route path="/portfolio" element={<PortfolioMainPage/>} />
-            <Route path="/portfolio/:portfolioId" element={<PortfolioObjectPage/>} />
+            <Route path="/portfolio/:id" element={<PortfolioObjectPage/>} />
             <Route path="/articles" element={<ArticlesMainPage/>} />
-            <Route path="/articles/:articleId" element={<Article/>} />
+            <Route path="/articles/:id" element={<Article/>} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/admin" element={<Navigate to="/" />} />

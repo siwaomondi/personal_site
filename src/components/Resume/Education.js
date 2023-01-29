@@ -4,7 +4,7 @@ const Education = (props) => {
     const educationList = props.educationList;
     const education = educationList.map((e, index) => (
         <div key={index}>
-            <h2 style={{ fontSize: "1.15em" }}>{e.certification}</h2>
+            <h2>{e.certification}</h2>
             <p>
                 <a href={e.institutionUrl} target="_blank">
                     {e.institutionName}

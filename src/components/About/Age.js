@@ -75,7 +75,7 @@ const Age = (props) => {
                         <Switch
                             onChange={counterChange}
                             defaultChecked
-                            color="warning" /*size="small"*/
+                            size="small"
                         />
                     }
                     label={counterOn ? "Counter On" : "Counter Off"}

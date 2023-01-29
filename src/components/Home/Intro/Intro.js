@@ -10,7 +10,6 @@ function Intro() {
                 </span>
                 <span>I'm siwa.</span>
             </div>
-
             <div className="intro_text">
                 A designer passionate about architecture, software development
                 and deep learning. My other interests are precision agriculture

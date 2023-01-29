@@ -6,9 +6,16 @@ import Main from "../layouts/Main";
 import MiscallenousLayout from "../layouts/MiscallenousLayout";
 // import "../static/css/Resume.css";
 
-const Resume= (props)=> {
-    const resumeSections = props.sections.map((e,index) => (
-        <ResumeObject key={index} componentName={e.props.componentName} object={e} />
+const Resume = (props) => {
+    const resumeSections = props.sections.map((e, index) => (
+        <>
+            <ResumeObject
+                key={index}
+                componentName={e.props.componentName}
+                object={e}
+            />
+            <hr></hr>
+        </>
     ));
     return (
         <MiscallenousLayout
@@ -21,7 +28,7 @@ const Resume= (props)=> {
             </section>
         </MiscallenousLayout>
     );
-}
+};
 Resume.defaultProps = {
     sections: [
         <Experience experiencesList={resumeData.experiencesList} />,

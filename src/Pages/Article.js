@@ -1,24 +1,37 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import IdNotFound from "../components/NotFound/IdNotFound";
 import ArticleLayout from "../layouts/ArticleLayout";
 
 const Article = () => {
-    const { articleId } = useParams();
-    const articleList = [
-        "Nowadays, everybody wanna talk like they got somethin' to say",
-        "But nothin' comes out when they move their lips,",
-        "Just a bunch of gibberish",
-    ];
-    var articleText = articleList.map((e) => <span>{e}</span>);
+    const { id } = useParams();
+    const [data, setData] = useState([{}]);
+
+    useEffect(() => {
+        const fetchData = () => {
+            fetch(`flask/articles/${id}`, {
+                method: "GET",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    setData(data);
+                });
+        };
+        fetchData();
+    }, []);
+
     return (
         <ArticleLayout>
             <p>
-                {articleId == "siwa" ? (
-                    articleText
+                {id === "siwa" ? (
+                    "Siwa welcome"
                 ) : (
                     <IdNotFound
-                        errorId={articleId}
+                        errorId={id}
                         title="articles"
                         link={"articles"}
                     ></IdNotFound>
