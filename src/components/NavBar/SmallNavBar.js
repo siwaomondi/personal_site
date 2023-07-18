@@ -12,21 +12,31 @@ const SmallNavbar = (props) => {
      */
     const navSideLinks = (render_list) => (
         <div>
-            {render_list.map((e, index) => (
+            {render_list.map((e, index) => {
+                let urlId= e.id? e.id:e
+                let navTag =e.tag? e.tag:e
+                console.log(urlId,e.tag)
+                return (
                 <>
                     {index != 0 ? <span> | </span> : null}
                     {props.isMain || props.isMiscellaneous ? (
-                        <NavLink to={`/${e}`} className="s_nav_link">
-                            {e}
+                        <NavLink
+                            to={
+                                props.isProject
+                                    ? `/portfolio/${urlId}`
+                                    : `/${urlId}`
+                            }
+                            className="s_nav_link"
+                        >
+                            {navTag}
                         </NavLink>
                     ) : props.isNotFound ? (
-                        // <a href="javascript:history.back()" >{e}</a>
                         <button onClick={() => navigate(-2)}>{e}</button>
                     ) : (
                         <Link className="s_nav_link">{e}</Link>
                     )}
                 </>
-            ))}
+            )})}
         </div>
     );
     const navigationList = ["← prev", "next →"];
@@ -50,6 +60,7 @@ SmallNavbar.defaultProps = {
     isMiscellaneous: false,
     isMain: false,
     isNotFound: false,
+    isProject: false,
 };
 
 export default SmallNavbar;

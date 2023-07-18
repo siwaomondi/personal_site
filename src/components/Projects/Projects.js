@@ -2,11 +2,11 @@ import { Collapse } from "@mui/material";
 import React, {useState } from "react";
 import PortfolioCover from "./PortfolioCover";
 // import "./Projects.css";
-
+import { portfolio_covers } from "../../data/portfolio/portfolio_data";
 const Projects = (props) => {
-    const projectList = props.projectList;
+    const projectList = portfolio_covers;
     const [open, setOpen] = useState(false);
-    const projects = projectList.map((e) => <PortfolioCover />);
+    const projects = projectList.map((e) => <PortfolioCover data={e}/>);
 
     return (
         <section id="portfolio" className="full">

@@ -8,7 +8,7 @@ import SmallNavbar from "../components/NavBar/SmallNavBar";
 const ProjectLayout = (props) => {
     const {id} =useParams()
     const isMain = id?false:true
-    const categories = ["architecture","<code/>"]
+    const categories = ["architecture",{id:"code",tag:"<code/>"}]
 
     return (
         <HelmetProvider>
@@ -34,7 +34,7 @@ const ProjectLayout = (props) => {
                 />
             </Helmet>
             <div class="project__page layout__page">
-                <SmallNavbar isMain = {isMain} categories={categories}></SmallNavbar>
+                <SmallNavbar isMiscellaneous = {true} categories={categories} isProject={true}></SmallNavbar>
                 <section class="project__content">{props.children}</section>
                 <div class="project__footer">
                     <Footer></Footer>

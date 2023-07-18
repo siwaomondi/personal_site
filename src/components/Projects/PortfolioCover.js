@@ -2,8 +2,9 @@ import React, { lazy } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom'
 const PortfolioCover = (props) => {
-    const bgImage = props.backgroundImage;
-    const linkAddress =`portfolio/${props.address}`
+    const linkAddress =`portfolio/architecture`
+    const data = props.data
+    const bgImage = `url(${data.coverImage})`;
 
     return (
         <>
@@ -15,7 +16,7 @@ const PortfolioCover = (props) => {
                     }}
                 >
                     <a className="port-link">
-                        <span className="port-title">Interior</span>
+                        <span className="port-title">{data.projectTitle}</span>
                     </a>
                 </div>
             </Link>
@@ -23,9 +24,12 @@ const PortfolioCover = (props) => {
     );
 };
 
-PortfolioCover.defaultProps = {
-    backgroundImage: "url(/images/1.png)",
-    address:"project1"
-};
+// PortfolioCover.defaultProps = {
+//     data:        {
+//         id: 1,
+//         projectTitle: "INTERIOR",
+//         coverImage:"url(/images/1.png)",
+//     },
+// };
 
 export default PortfolioCover;

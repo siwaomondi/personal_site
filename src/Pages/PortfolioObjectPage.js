@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import IdNotFound from "../components/NotFound/IdNotFound.js";
 import ProjectLayout from "../layouts/ProjectLayout.js";
+import PortfolioArchMainPage from "./PortfolioArchMain.js";
+import PortfolioCodeMainPage from "./PortfolioCodeMainPage.js";
 // import { withRouter } from "react-router-dom";
 const PortfolioObjectPage = (props) => {
     const { id } = useParams();
@@ -8,8 +10,10 @@ const PortfolioObjectPage = (props) => {
     return (
         <ProjectLayout route={id}>
             <div>
-                {id == "project1" ? (
-                    <h1>Will be updated soon...</h1>
+                {id == "architecture" ? 
+                    <PortfolioArchMainPage/>
+                : id == "code" ? (
+                    <PortfolioCodeMainPage/>
                 ) : (
                     <IdNotFound
                         link="pOrtfolio"
