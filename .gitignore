@@ -28,6 +28,14 @@ yarn-error.log*
 #image_files and documents
 /src/documents
 /src/images
+/public/images
+
+#firebase
+./firebase
+
+#
+.idea
+.vscode
 
 
 .firebase/hosting.YnVpbGQ.cache
