@@ -1,5 +1,5 @@
 const PortfolioCodeMainPage = () => {
-    return (<><h1>Will be updated soon...</h1></>);
+    return (<><div>Will be updated soon...</div></>);
 }
 
 PortfolioCodeMainPage.defaultProps = {};

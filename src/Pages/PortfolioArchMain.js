@@ -1,12 +1,12 @@
-import { documents} from "../data/projects.js";
+import { documents } from "../data/projects.js";
 
 const PortfolioArchMainPage = () => {
-    return ( 
+    return (
         <>
-            <h1>
-                            Here are some architecturals design projects i am
-                            somewhat proud of:
-                        </h1>
+            <div>
+                Here are some architectural design projects i am somewhat proud
+                of:
+            </div>
             <object
                 data="https://drive.google.com/file/d/1JuHuPDpEW8oehrb9n8P-ucagcNHg7w39/preview"
                 type="application/pdf"
@@ -19,8 +19,8 @@ const PortfolioArchMainPage = () => {
                 </p>
             </object>
         </>
-    ); 
-}
- 
+    );
+};
+
 PortfolioArchMainPage.defaultProps = {};
 export default PortfolioArchMainPage;
