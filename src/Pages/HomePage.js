@@ -17,7 +17,6 @@ import Main from "../layouts/Main";
 
 
 const HomePage = (props) => {
-    const sectionList = [];
     return (
         <Main>
             <div className="spage">
@@ -29,11 +28,7 @@ const HomePage = (props) => {
                     <Link to="about">
                         <h1>About</h1>
                     </Link>
-                    <Link to="resume">
-                        <h1>Resume</h1>
-                    </Link>
                 </section>
-                {sectionList}
                 
                 <Footer />
             </div>
