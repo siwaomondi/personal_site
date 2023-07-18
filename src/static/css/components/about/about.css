@@ -49,6 +49,7 @@
     filter: grayscale(50%);
     overflow: hidden;
     border-radius: 50%;
+    filter: grayscale(100%);
 }
 
 .influencer-img img {
@@ -58,6 +59,7 @@
 
 .influencer-img:hover {
     transform: scale(1.04);
+    filter:none;
 }
 
 .influencer-bottom {
