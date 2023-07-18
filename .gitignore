@@ -31,11 +31,11 @@ yarn-error.log*
 /public/images
 
 #firebase
-./firebase
+/.firebase
 
 #
-.idea
-.vscode
+/.idea
+/.vscode
 
 
 .firebase/hosting.YnVpbGQ.cache
