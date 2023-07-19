@@ -19,10 +19,10 @@ function Footer() {
                             ⌂
                         </HashLink>
                     </span>
-                    <span>
+                    {/* <span>
                         <a href={links.twitter}>twitter</a>
                     </span>
-                    <span> | </span>
+                    <span> | </span> */}
                     <span>
                         <a href={links.linkedIn}>linkedIn</a>
                     </span>
